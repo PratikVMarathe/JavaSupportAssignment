@@ -10,7 +10,7 @@ public class Task5 {
         try {
             if (doc == null) {
                 // FIX: Expected validation failure. Log at WARN instead of printing a stack trace.
-                logger.warn("Validation failed: document is null.");
+                logger.warn("Validation failed: document is null");
                 return null;
             }
 
@@ -18,7 +18,7 @@ public class Task5 {
 
             if (content.isEmpty()) {
                 // FIX: Expected validation failure. Log at WARN instead of printing a stack trace.
-                logger.warn("Validation failed: empty document content.");
+                logger.warn("Validation failed: empty document content");
                 return null;
             }
 
@@ -26,7 +26,7 @@ public class Task5 {
 
         } catch (Exception e) {
             // FIX: Log unexpected runtime errors using SLF4J instead of printStackTrace().
-            logger.error("Unexpected error during document validation.", e);
+            logger.error("Unexpected error during document validation", e);
             return null;
         }
     }
@@ -43,7 +43,7 @@ public class Task5 {
 
             } catch (Exception e) {
                 // FIX: Log unexpected batch processing errors instead of silently swallowing them.
-                logger.error("Unexpected error while validating document in batch.", e);
+                logger.error("Unexpected error while validating document in batch", e);
             }
         }
     }
